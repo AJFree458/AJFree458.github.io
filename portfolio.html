@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--Need the class to make the sticky footer work-->
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Need to make sure the style link is in place-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Portfolio</title>
+</head>
+<!--Added the classes to make the background a different color and the rest are to make the sticky footer work-->
+<body class="d-flex flex-column h-100 backgTwo">
+  <header>
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <!--changed out the link for an h1 tag-->
+        <h1 class="navbar-brand">Arthur Freeman</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!--put in the auto left margin to move the links to the right side of the page on the ul tag and the li tags-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-auto">
+              <a class="nav-link textVis" href="index.html">About</a>
+            </li>
+            <!--made sure to make the class="active" was here so that the link was highlighted, and the span tags work with it-->
+            <li class="nav-item ml-auto active">
+              <a class="nav-link textVis" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-auto">
+              <a class="nav-link textVis" href="contact.html">Contact</a>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <!--made sure the class="flex-shrink-0" is here so that the sticky footer works-->
+  <main class="flex-shrink-0">
+    <!--changed the margins and padding-->
+    <div class="container border mt-5 p-3 cardBg">
+      <!--put in an h1 and changed the margin, padding, and added in a border on the bottom-->
+      <h2 class="border-bottom mb-3 pb-3 text-center font-weight-bold">Portfolio</h2>
+      <!--changed to card deck-->
+      <div class="row">
+        <div class="card-deck p-3">
+          <div class="card mb-3">
+            <img src="./assets/images/2020:02:16-EventBook-Screenshot.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">EventBook</h3>
+              <p>Want to find a concert near you? This application will let you use geolocation to find concerts in your area.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/Project_opus_1">github.com/AJFree458/Project_opus_1</a></p>
+              <p>Deployment: <a href="https://ajfree458.github.io/Project_opus_1/">ajfree458.github.io/Project_opus_1/</a></p>
+              <ul><p>Technologies:</p>
+                <li>HTML5</li>
+                <li>Semantic UI</li>
+                <li>GeoHash</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3"">
+            <img src="./assets/images/Project-2_Demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Project-2_Volunteer</h3>
+              <p>Volunteering can be hard. This app allows a user to find and apply for volunteer opportunities</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/Project-2">github.com/AJFree458/Project-2</a></p>
+              <p>Deployment: <a href="https://project2-volunteer.herokuapp.com/">project2-volunteer.herokuapp.com/</a></p>
+              <ul><p>Technologies:</p>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Express</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="./assets/images/Recipebox-demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">RecipeBox</h3>
+              <p>Keep your recipes in one spot, without needing to keep track of paper.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/ecorreale/RecipeBox">github.com/ecorreale/RecipeBox</a></p>
+              <p>Deployment: <a href="https://recipeboxclt.herokuapp.com/">recipeboxclt.herokuapp.com/</a></p>
+              <ul><p>Technologies:</p>
+                <li>React</li>
+                <li>react-helmet</li>
+                <li>jsonwebtoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck p-3">
+          <div class="card mb-3">
+            <img src="./assets/images/google-books_demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Google Books Search</h3>
+              <p>Search and save books for later reading through the Google Books API</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus21_SearchGoogleBooks">github.com/AJFree458/opus21_SearchGoogleBooks</a></p>
+              <p>Deployment: <a href="https://search-save-google-books.herokuapp.com/">search-save-google-books.herokuapp.com/</a></p>
+              <ul><p>Technologies:</p>
+                <li>MongoDB</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Node</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="./assets/images/Burger_Demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">MVC Eat-Da Burger</h3>
+              <p>Add burgers that you want to eat, and then tell when you have eaten them.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus13_MVC-Burger">github.com/AJFree458/opus13_MVC-Burger</a></p>
+              <p>Deployment: <a href="https://warm-plains-37625.herokuapp.com/">Heroku App</a></p>
+              <ul><p>Technologies:</p>
+                <li>Handlebars</li>
+                <li>Bootstrap</li>
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3"">
+            <img src="./assets/images/2020:03:16-WeatherDashboard-Screenshot.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Weather Dashboard</h3>
+              <p>Find the current and five day weather report for cities that you can search for. Save the city to return to later.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus6_weather_dash">github.com/AJFree458/opus6_weather_dash</a></p>
+              <p>Deployment: <a href="https://ajfree458.github.io/opus6_weather_dash/">ajfree458.github.io/opus6_weather_dash/</a></p>
+              <ul><p>Technologies:</p>
+                <li>HTML5</li>
+                <li>Bootstrap</li>
+                <li>AJAX</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck p-3">
+          <div class="card mb-3">
+            <img src="./assets/images/Note-Taker_Demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Express Note Taker</h3>
+              <p>Create and save notes.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus11_express-note-taker">github.com/AJFree458/opus11_express-note-taker</a></p>
+              <p>Deployment: <a href="https://ancient-woodland-06582.herokuapp.com/">ancient-woodland-06582.herokuapp.com/</a></p>
+              <ul><p>Technologies:</p>
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>fs npm package</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="./assets/images/Employee-Tracker_Demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Employee Tracker</h3>
+              <p>A command line app to track employees in a company.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus12_employee-tracker">github.com/AJFree458/opus12_employee-tracker</a></p>
+              <p>Deployment: N/A</p>
+              <ul><p>Technologies:</p>
+                <li>Node.js</li>
+                <li>Inquirer npm package</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="./assets/images/Readme-generator_Demo.png" class="card-img-top" alt="portfolio picture">
+            <div class="card-body">
+              <h3 class="card-title">Readme Generator</h3>
+              <p>Create a basic readme through the command line.</p>
+              <h4>Links:</h4>
+              <p>Repository: <a href="https://github.com/AJFree458/opus9_readme-generator">github.com/AJFree458/opus9_readme-generator</a></p>
+              <p>Deployment: N/A</p>
+              <ul><p>Technologies:</p>
+                <li>Inquirer</li>
+                <li>Axios</li>
+                <li>Node.js</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--The class in the footer is needed to stick said footer to the bottom of the page, with a dark background.-->
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="textVis">This document is subject to change without notice.</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
